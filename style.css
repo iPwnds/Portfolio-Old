@@ -407,6 +407,16 @@ body.light .progress-wrap svg.progress-circle path {
 	opacity: 1;
 }
 
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+
+  @keyframes fadeout {
+	0% {opacity:1;}
+	100% {opacity:0;}
+  }
+
 .botnav {
     overflow: hidden;
     justify-content: left;
@@ -428,6 +438,7 @@ body.light .progress-wrap svg.progress-circle path {
 
 .github:hover:after {
 	content: "iPwnds";
+	animation: fadeIn 0.5s;
 }
 
 .discord {
@@ -441,6 +452,7 @@ body.light .progress-wrap svg.progress-circle path {
 
 .discord:hover:after {
 	content: "プンズ#7686";
+	animation: fadeIn 0.5s;
 }
 
 .instagram {
@@ -454,6 +466,7 @@ body.light .progress-wrap svg.progress-circle path {
 
 .instagram:hover:after {
 	content: "Floski___";
+	animation: fadeIn 0.5s;
 }
 
 .reddit {
@@ -467,6 +480,7 @@ body.light .progress-wrap svg.progress-circle path {
 
 .reddit:hover:after {
 	content: "NotPwnds";
+	animation: fadeIn 0.5s;
 }
 
 .twitter {
@@ -480,6 +494,7 @@ body.light .progress-wrap svg.progress-circle path {
 
 .twitter:hover:after {
 	content: "Floski11";
+	animation: fadeIn 0.5s;
 }
 
 .email {
@@ -493,4 +508,5 @@ body.light .progress-wrap svg.progress-circle path {
 
 .email:hover:after {
 	content: "florian.braun.2005@gmail.com";
+	animation: fadeIn 0.5s;
 }
