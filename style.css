@@ -406,3 +406,91 @@ body.light .progress-wrap svg.progress-circle path {
 .switched .circle:after {
 	opacity: 1;
 }
+
+.botnav {
+    overflow: hidden;
+    justify-content: left;
+    align-items: left;
+    display: flex;
+    text-shadow: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+.github {
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+.github:after {
+	content: "GitHub";
+}
+
+.github:hover:after {
+	content: "iPwnds";
+}
+
+.discord {
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+.discord:after {
+	content: "Discord";
+}
+
+.discord:hover:after {
+	content: "プンズ#7686";
+}
+
+.instagram {
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+.instagram:after {
+	content: "Instagram";
+}
+
+.instagram:hover:after {
+	content: "Floski___";
+}
+
+.reddit {
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+.reddit:after {
+	content: "Reddit";
+}
+
+.reddit:hover:after {
+	content: "NotPwnds";
+}
+
+.twitter {
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+.twitter:after {
+	content: "Twitter";
+}
+
+.twitter:hover:after {
+	content: "Floski11";
+}
+
+.email {
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+.email:after {
+	content: "Email";
+}
+
+.email:hover:after {
+	content: "florian.braun.2005@gmail.com";
+}
