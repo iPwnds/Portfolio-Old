@@ -331,8 +331,8 @@ body.light .progress-wrap svg.progress-circle path {
 	margin: 0 auto;
 	text-align: center;
 	opacity: 1;
-    z-index: 33333;
-    transition: all 300ms linear;
+  z-index: 33333;
+  transition: all 300ms linear;
 }
 
 .circle {
@@ -407,106 +407,50 @@ body.light .progress-wrap svg.progress-circle path {
 	opacity: 1;
 }
 
-@keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
-  }
-
-@keyframes fadeout {
-	0% {opacity:1;}
-	100% {opacity:0;}
-  }
-
-.botnav {
-    overflow: hidden;
-    justify-content: left;
-    align-items: left;
-    display: flex;
-    text-shadow: none;
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-
-.github {
-	padding-left: 2vh;
-	padding-right: 2vh;
+body .footer {
+  z-index: 1;
+  --footer-background:#E9CBAF;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
 }
-
-.github:after {
-	content: "GitHub";
+body .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: .7fr .2fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
 }
-
-.github:hover:after {
-	content: "iPwnds";
-	animation: fadeIn 0.5s;
+body .footer .content a, body .footer .content p {
+  color: #F5F7FA;
+  text-decoration: none;
 }
-
-.discord {
-	padding-left: 2vh;
-	padding-right: 2vh;
+body .footer .content b {
+  color: white;
 }
-
-.discord:after {
-	content: "Discord";
+body .footer .content p {
+  margin: 0;
+  font-size: 1vw;
 }
-
-.discord:hover:after {
-	content: "プンズ#7686";
-	animation: fadeIn 0.5s;
+body .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.instagram {
-	padding-left: 2vh;
-	padding-right: 2vh;
+body .footer .content > div > div {
+  margin: 0.5rem 0;
+  font-size: 1vw;
 }
-
-.instagram:after {
-	content: "Instagram";
+body .footer .content > div > div > * {
+  margin-right: 0.5rem;
 }
-
-.instagram:hover:after {
-	content: "Floski___";
-	animation: fadeIn 0.5s;
-}
-
-.reddit {
-	padding-left: 2vh;
-	padding-right: 2vh;
-}
-
-.reddit:after {
-	content: "Reddit";
-}
-
-.reddit:hover:after {
-	content: "NotPwnds";
-	animation: fadeIn 0.5s;
-}
-
-.twitter {
-	padding-left: 2vh;
-	padding-right: 2vh;
-}
-
-.twitter:after {
-	content: "Twitter";
-}
-
-.twitter:hover:after {
-	content: "Floski11";
-	animation: fadeIn 0.5s;
-}
-
-.email {
-	padding-left: 2vh;
-	padding-right: 2vh;
-}
-
-.email:after {
-	content: "Email";
-}
-
-.email:hover:after {
-	content: "florian.braun.2005@gmail.com";
-	animation: fadeIn 0.5s;
+body .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
 }
