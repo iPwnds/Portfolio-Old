@@ -28,18 +28,7 @@ html {
     --medium-blue: #242B36;
     --dark-light-blue: #222933; 
     --dark-blue: #1C2129; 
-    --red: #da2c4d;
-	--yellow: #f8ab37;
-	--green: #2ecc71;
 	--white: #ffffff;
-	--grey-light: #f2f7f9;
-	--grey: #ecedf3;
-	--black: #080808;
-	--black-blue: #1f2029;
-	--black-blue-light: #353746;
-	--black-blue-light-2: #404255;
-	--black-blue-light-3: #4b4d64;
-	--black-light: #424455;
 }
 
 .button {
@@ -123,22 +112,25 @@ html {
     position: relative;
     margin-bottom: 0em;
     padding: 2em 0;
-  }
-  .hr:after, .hr:before {
+}
+
+.hr:after, .hr:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 1px;
     bottom: 50%;
     left: 0;
-  }
-  .hr:before {
+}
+
+.hr:before {
     background: linear-gradient(90deg, #10111F 0%, #10111F 50%, transparent 50%, transparent 100%);
     background-size: 15px;
     background-position: center;
     z-index: 1;
-  }
-  .hr:after {
+}
+
+.hr:after {
     transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
     transition: opacity 0.3s ease, animation 0.3s ease;
     transition: opacity 0.3s ease, animation 0.3s ease, -webkit-animation 0.3s ease;
@@ -147,16 +139,18 @@ html {
     background-position: 0%;
     -webkit-animation: bar 15s linear infinite;
             animation: bar 15s linear infinite;
-  }
-  @-webkit-keyframes bar {
+}
+
+@-webkit-keyframes bar {
     0% {
       background-position: 0%;
     }
     100% {
       background-position: 200%;
     }
-  }
-  @keyframes bar {
+}
+
+@keyframes bar {
     0% {
       background-position: 0%;
     }
@@ -165,22 +159,24 @@ html {
     }
   }
   
-  .hr.anim:before {
+.hr.anim:before {
     background: linear-gradient(90deg, #10111F 0%, #10111F 5%, transparent 5%, transparent 10%, #10111F 10%, #10111F 15%, transparent 15%, transparent 20%, #10111F 20%, #10111F 25%, transparent 25%, transparent 30%, #10111F 30%, #10111F 35%, transparent 35%, transparent 40%, #10111F 40%, #10111F 45%, transparent 45%, transparent 50%, #10111F 50%, #10111F 55%, transparent 55%, transparent 60%, #10111F 60%, #10111F 65%, transparent 65%, transparent 70%, #10111F 70%, #10111F 75%, transparent 75%, transparent 80%, #10111F 80%, #10111F 85%, transparent 85%, transparent 90%, #10111F 90%, #10111F 95%, transparent 95%, transparent 100%);
     background-size: 150px;
     background-position: center;
     z-index: 1;
     -webkit-animation: bar 120s linear infinite;
             animation: bar 120s linear infinite;
-  }
-  .hr.anim:hover:before {
+}
+
+.hr.anim:hover:before {
     -webkit-animation-duration: 20s;
             animation-duration: 20s;
-  }
-  .hr.anim:hover:after {
+}
+
+.hr.anim:hover:after {
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
-  }
+}
 
 .column {
     display: flex;
@@ -216,7 +212,7 @@ html {
 
 .decoration {
     text-decoration: none;
-  }
+}
 
 .topnav {
     overflow: hidden;
@@ -368,38 +364,38 @@ html {
 }
 
 .footer {
-  z-index: 1;
-  display: grid;
-  position: relative;
-  grid-area: footer;
-  min-height: 12rem;
+    z-index: 1;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    min-height: 12rem;
 }
 
 .footer .content{
-  z-index: 2;
-  display: grid;
-  grid-template-columns: .7fr .2fr auto;
-  grid-gap: 4rem;
-  padding: 2rem;
-  color: var(--light-blue);
+    z-index: 2;
+    display: grid;
+    grid-template-columns: .7fr .2fr auto;
+    grid-gap: 4rem;
+    padding: 2rem;
+    color: var(--light-blue);
 }
 
 .footer .content a{
-  color: var(--light-blue);
-  text-decoration: none;
+    color: var(--light-blue);
+    text-decoration: none;
 }
 
 .footer .content > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer .content > div > div {
-  margin: 0.5rem 0;
-  font-size: 1vw;
+    margin: 0.5rem 0;
+    font-size: 1vw;
 }
 
 .footer .content > div > div > * {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
 }
