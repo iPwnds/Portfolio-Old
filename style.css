@@ -178,6 +178,15 @@ html {
             animation-duration: 2s;
 }
 
+.rainbow {
+    background: linear-gradient(to right, #62efab 5%, #F2EA7D 15%, #F2EA7D 25%, #FF8797 35%, #FF8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: bar 15s linear infinite;
+            animation: bar 15s linear infinite;
+}
+
 .column {
     display: flex;
     flex-direction: row;
