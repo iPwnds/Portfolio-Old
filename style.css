@@ -74,15 +74,15 @@ html {
     color: var(--medium-blue);
 }
 
-.dark__highlight {
-    background-color: var(--medium-blue);
+.dark_highlight {
+    background-color: var(--dark-light-blue);
     border-radius: 20px;
     line-height: 1.5;
     padding-right: 0.9vw;
     padding-left: 0.9vw;
     font-weight: 520;
     text-shadow: none;
-    box-shadow: 3px 2px 2px var(--dark-light-blue);
+    box-shadow: 3px 2px 2px var(--dark-blue);
 }
 
 .header {
