@@ -280,7 +280,7 @@ html {
 
 ::-webkit-scrollbar-track {
     background: var(--light-dark-blue);
-    border-radius: 0px;
+    border-radius: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
